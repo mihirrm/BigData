@@ -1,0 +1,16 @@
+This file contains a description of what the follwoing project is about.
+
+part 1:-
+1) part 1 deals with clustering of given data. aim was to cluster the given data into 10 cluster and run predcitions on that.
+2) classifiers.py file contains all models built on classifiers like naive bayes, decision tree which are in spark mllib, and run predictions onn test data.
+accuracy was calculated by splitting the training data into 60-40 ratio.
+3) Alternate least square is recimmmendation system algorithm that is basically a latent factor model algorithm that split a given matrix into 2 matrix.
+idea was to built als model on all training data and predict all the unknown values in the matrix.
+
+
+part2 :-
+part 2 aim is to use kafka streaming with apache spark framework for real time analysis.
+kafka producer sends the twitter tweets from the its api, scrrapper puts all the data in the opic created.
+consumer reads the data from topic ,performs real time analytics, and send it to elasticsearch index for index seearching.
+elastic search is used for searching data in indexed manner.
+Indexed data is visualized on kibana on tilemap, since data in elastic search contains geo cordinates.
